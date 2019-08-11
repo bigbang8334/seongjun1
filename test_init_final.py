@@ -58,6 +58,7 @@ git_access_repo_restart = os.environ["GIT_REPO_RESTART"]
 g = Github(git_access_token)
 repo = g.get_repo(git_access_repo)
 repo_restart = g.get_repo(git_access_repo_restart)
+Client.run(access_token)
 
 def init():
 	global basicSetting
